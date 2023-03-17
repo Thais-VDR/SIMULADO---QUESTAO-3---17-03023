@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clinica Bom Coração</title>
+  </head>
+  <body class="corpo">
+    <header class="principal">
+        <div class="container">
+            <h1 class="titulo">BOM CORAÇÃO</h1>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2 class="titulo-2">Pacientes</h2>
+            <hr>
+            <label id="pesquisa-na-tabela">Pesquisa</label>
+            <input type="text" name="pesquisa" id="pesquisa-na-tabela" placeholder="Digite aqui">
+            <br>
+            <br>
+            <table class="tabelas-pacientes">
+                <thead>
+                  <tr class="dados">
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Horário</th>
+                    <th>Médico</th>
+                  </tr>
+                </thead>
+                <tbody id="classes">
+                    <tr class="dados" id="primeiros-dados">
+                        <td class="info-nome">Luana</td>
+                        <td class="info-data">17/03</td>
+                        <td class="info-horario">12:30</td>
+                        <td class="info-medico">Dr.Osvaldo</td>
+                    </tr>
+                    <tr class="dados">
+                        <td class="info-nome">Carlos</td>
+                        <td class="info-data">17/03</td>
+                        <td class="info-horario">13:20</td>
+                        <td class="info-medico">Dr.Osvaldo</td>
+                    </tr>
+                    <tr class="dados">
+                        <td>Augusto</td>
+                        <td>18/03</td>
+                        <td>08:10</td>
+                        <td>Dr.Osvaldo</td>
+                    </tr>
+                    <tr class="dados">
+                        <td class="info-nome">Joana</td>
+                        <td class="info-data">18/03</td>
+                        <td class="info-horario">15:10</td>
+                        <td class="info-medico">Dr.Osvaldo</td>
+                    </tr>
+                </tbody>
+           </table>
+           <span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
+           <button id="procurar-paciente" >Procurar Paciente</button>
+        </section>
+    </main>
+    <section class="container" class="bota-principal">
+        <h2 id="titulo-agenda">Agendar nova consulta:</h2>
+        <ul id="mensagenm-erro"></ul>
+        <form id="paciente-adiciona">
+         <div class="grupos">
+            <label for="nome">Nome:</label>
+            <input id ="nome" name ="nome" type ="text" placeholder="Digite o nome" class="tabela tabela-medio">
+         </div>  
+         <div class="grupos">
+            <label for="data">Data:</label>
+            <input id ="data" name ="data" type ="date" placeholder="Digite uma data" class="tabela tabela-medio">
+         </div> 
+         <div class="grupos">
+            <label for="horario">Horário:</label>
+            <input id ="horario" name ="horario" type ="time" placeholder="Digite um horário" class="tabela tabela-medio">
+         </div> 
+         <div class="grupos">
+            <label for="medico">Médico:</label>
+            <input id ="medico" name ="medico" type ="text" placeholder="Digite um médico" class="tabela tabela-medio">
+         </div> 
+         <button id="adicionar-consulta" class="botao botao-principal">Agendar</button>
+        </form>
+    </section>
+    <script src="form.js"></script>
+    <script src="removerpaciente.js"></script>
+  </body>
+</html>

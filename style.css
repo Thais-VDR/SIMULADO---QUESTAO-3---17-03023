@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+.corpo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    margin: auto 0;
+}
+.principal{
+background-color: rgb(174, 227, 248);
+height: 60%;
+width: 100%;
+color: #FFF;
+text-align: center;
+font-size: 1.5em;
+
+}
+#titulo-agenda{
+
+    font-size: 2em;
+}
+
+.titulo{
+display: inline-block;
+vertical-align: middle;
+}
+
+.titulo-2{
+    text-align: center;
+    font-size: 2em;
+}
+.tabelas-pacientes{
+    overflow: center;
+    width: 80%;
+    margin-bottom: 0.2em;
+    
+}
+.dados,td{
+    padding: 0.8em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+th{
+    font-weight: bold;
+	background-color: rgb(183, 241, 255);
+}
+.grupos{
+    margin: 0;
+	padding-bottom: 1em;
+	width: 50%;
+	padding: 0.7em;
+}
+
+#pesquisa-na-tabela{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    color: rgb(85, 85, 85);
+    margin-bottom: 0.4em;
+}
+#procurar-paciente{
+    padding: 0.5em 2em;
+	border: 0;
+	font-size: 1.1em;
+	color: #fff;
+	background-color:#6ec2ec;
+	width: 15%;
+    margin: 20px 0px;
+}
+.tabela{
+	margin: 0;
+	border: 1px solid rgb(5, 5, 5);
+	padding: 0.5em;
+	width: 30%;
+}
+
+.tabela-medio{
+	display: inline-block;
+	padding-right: 0.5em;
+    
+}
+#adicionar-consulta{
+    padding: 0.5em 2em;
+	border: 0;
+	font-size: 1.1em;
+	color: #fff;
+	background-color:#6ec2ec;
+	width: 15%;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.invisivel {
+	display: none;
+}
